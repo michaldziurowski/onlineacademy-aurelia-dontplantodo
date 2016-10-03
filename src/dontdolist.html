@@ -1,0 +1,6 @@
+<template>
+    <input type="text" value.bind="dontDoText"></input>
+    <button click.delegate="add()">Add</button>
+
+    <compose repeat.for="dontdo of dontDos" view-model.bind="dontdo"></compose>
+</template>
